@@ -8,12 +8,15 @@ public class ImprimirLogotipo {
     public void plasmar(CMYK cmyk){
         // plasma la imagen ya adaptada a cmyk
     }
-    public void imprimir(){
+    public static void imprimir(){
         //imprime la imagen
     }
     
     public static void main(String[] args) {
-        System.out.println("Imprime");
+
+    	if(LogotipoAdapter.imprimible())
+    		imprimir();
+    	
     }
     
 }

@@ -9,6 +9,11 @@ public class LogotipoDigital{
     public LogotipoDigital(Image Figura, List CodeRGB) {
         this.Figura = Figura;
         this.CodeRGB = CodeRGB;
+        
+    }
+    
+    public static boolean imprimible() {
+    	return false;
     }
     
     public void mostrarPantalla(){

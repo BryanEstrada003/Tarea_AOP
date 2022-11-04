@@ -33,7 +33,6 @@ public class Uber {
         if(nuevoOrigen.equals(viajeEnCurso.getDestino()))
     		crearParada();
         
-    
     }
     
 }

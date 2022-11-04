@@ -6,6 +6,11 @@ public class LogotipoAdapter extends LogotipoDigital implements CMYK{
     
     public LogotipoAdapter(Image Figura, List CodeRGB){
         super(Figura,CodeRGB);
+        
+    }
+    
+    public static boolean imprimible() {
+    	return true;
     }
     
     @Override
