@@ -9,5 +9,8 @@ package com.mycompany.pd_adapter;
  * @author HOME
  */
 public interface CMYK {
-    
+    int getCian();
+    int getMagenta();
+    int getYellow();
+    int getBlack();
 }
