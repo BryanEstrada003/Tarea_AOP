@@ -2,6 +2,9 @@
 public class Uber {
 
     public static void main(String[] args) {
+        
+        //Solo puede haber un viaje en curso
+        
         System.out.println("Viaje de Uber en curso");
         ViajeUber viajeEnCurso = ViajeUber.getViaje();
         System.out.println(viajeEnCurso);

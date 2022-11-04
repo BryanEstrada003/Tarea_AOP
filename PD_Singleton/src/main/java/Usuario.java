@@ -1,5 +1,7 @@
 
-public class Usuario {
+public class Usuario { 
+    
+    //Una vez iniciada sesión, el usuario va a ser el mismo en todos los viajes
 
     private String nombre, user, password;
     
