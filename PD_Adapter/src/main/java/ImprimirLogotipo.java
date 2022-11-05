@@ -2,8 +2,9 @@
 import java.util.List;
 
 public class ImprimirLogotipo {
+	@SuppressWarnings("rawtypes")
     private List Tamanio;
-    // ohter atributes
+    // other attributes
     
     public static void imprimir(LogotipoAdapter logad){
         //imprime la imagen

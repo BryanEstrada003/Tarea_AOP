@@ -42,7 +42,7 @@ public class Uber {
     		crearParada();
         else 
         	System.out.println("No se pudo crear nueva parada");
-        
-    }
+        sc.close();
+        }
     
 }
