@@ -15,7 +15,7 @@ public aspect AutUser {
         	System.out.println("Verficado");
         } else {
         	Uber.verficado=false;
-	        System.out.println("No Verficado");
+	        System.out.println("No Verficado, no se puede crear nueva parada");
 	    }
     }
 	
