@@ -4,6 +4,7 @@ import java.util.List;
 
 public class LogotipoAdapter extends LogotipoDigital implements CMYK{
 	protected static boolean adaptado=true;
+	@SuppressWarnings("rawtypes")
     public LogotipoAdapter(Image Figura, List CodeRGB){
         super(Figura,CodeRGB);
         

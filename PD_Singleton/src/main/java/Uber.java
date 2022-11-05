@@ -33,7 +33,17 @@ public class Uber {
         
     	crearParada(verficado);
         
+<<<<<<< HEAD
         
     }
+=======
+      //Agregar nueva parada (mismo viaje, seguido del anterior)
+        if(nuevoOrigen.equals(viajeEnCurso.getDestino()))
+    		crearParada();
+        else 
+        	System.out.println("No se pudo crear nueva parada");
+        sc.close();
+        }
+>>>>>>> e92de63ff617b2541083c82b3541d8d57690e26b
     
 }
