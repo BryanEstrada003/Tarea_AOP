@@ -5,15 +5,15 @@ public class ImprimirLogotipo {
     private List Tamanio;
     // ohter atributes
     
-    public void plasmar(CMYK cmyk){
-        // plasma la imagen ya adaptada a cmyk
-    }
-    public static void imprimir(){
+    public static void imprimir(LogotipoAdapter logad){
         //imprime la imagen
+    	System.out.println("Se imprimió");
+
     }
     
     public static void main(String[] args) {
-    	imprimir();
+    	LogotipoAdapter logad= null; //se recibe la imagen adaptada
+    	imprimir(logad);
     	
     }
     

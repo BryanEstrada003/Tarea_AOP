@@ -2,12 +2,12 @@
 public aspect AutoLogoA {
 
 	pointcut success() : call(* imprimir*(..) );
-    after() : success() {
+    before() : success() {
     	System.out.println("Ejecutando proceso de conversión...");
     	if(LogotipoAdapter.adaptado) {   
-    		System.out.println("Se imprimio");
+    		System.out.println("se puede imprimir");
     	}else {
-    		System.out.println("No se realizo la conversión");
+    		System.out.println("No se puede imprimir");
     	}
     }
 	
