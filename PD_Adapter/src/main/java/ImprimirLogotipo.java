@@ -13,9 +13,7 @@ public class ImprimirLogotipo {
     }
     
     public static void main(String[] args) {
-
-    	if(LogotipoAdapter.imprimible())
-    		imprimir();
+    	imprimir();
     	
     }
     

@@ -3,16 +3,14 @@ import java.awt.Image;
 import java.util.List;
 
 public class LogotipoAdapter extends LogotipoDigital implements CMYK{
-    
+	protected static boolean adaptado=true;
     public LogotipoAdapter(Image Figura, List CodeRGB){
         super(Figura,CodeRGB);
         
     }
     
-    public static boolean imprimible() {
-    	return true;
-    }
     
+     
     @Override
     public int getCian(){
         int value=0;
@@ -40,5 +38,5 @@ public class LogotipoAdapter extends LogotipoDigital implements CMYK{
         //del CodeRGB extrae para obtener el valor B
         return value;
     }
-    
+     
 }
