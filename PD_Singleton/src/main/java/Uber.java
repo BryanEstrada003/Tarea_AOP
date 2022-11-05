@@ -3,8 +3,7 @@ import java.util.Scanner;
 
 public class Uber {
 	
-	public static Scanner sc= new Scanner(System.in);
-    public static String nuevoOrigen;
+	public static String nuevoOrigen;
     public static String nuevoDestino;
     public static String nuevoPrecio;
     
@@ -21,12 +20,14 @@ public class Uber {
             
     public static void main(String[] args) {
         
+    	Scanner sc= new Scanner(System.in);
         
-        //Solo puede haber un viaje en curso
+    	//Solo puede haber un viaje en curso
         
         System.out.println("Viaje de Uber en curso");
         ViajeUber viajeEnCurso = ViajeUber.getViaje();
         System.out.println(viajeEnCurso);
+        
         
         System.out.println("Agregar nueva parada");
         System.out.println("Ingrese nuevo origen: ");
