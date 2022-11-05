@@ -3,10 +3,9 @@ public class ViajeUber {
 
     private static ViajeUber viaje;
     Usuario usuario;
-    private String conductor, origen, destino;
-    private int precio;
+    private String conductor, origen, destino,precio;
 
-    private ViajeUber(Usuario usuario, String conductor, String origen, String destino, int precio) {
+    private ViajeUber(Usuario usuario, String conductor, String origen, String destino, String precio) {
         this.usuario=usuario;
         this.conductor = conductor;
         this.origen = origen;
@@ -18,7 +17,7 @@ public class ViajeUber {
     public static ViajeUber getViaje (){
         
         if(viaje==null)
-            viaje = new ViajeUber(Usuario.getUsuario(),"Juanito", "Casa", "Trabajo", 10);
+            viaje = new ViajeUber(Usuario.getUsuario(),"Juanito", "Casa", "Trabajo", "10");
         return viaje;
         
     }
@@ -32,16 +31,8 @@ public class ViajeUber {
         return usuario;
     }
 
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
-
     public String getConductor() {
         return conductor;
-    }
-
-    public void setConductor(String conductor) {
-        this.conductor = conductor;
     }
 
     public String getOrigen() {
@@ -60,11 +51,11 @@ public class ViajeUber {
         this.destino = destino;
     }
 
-    public int getPrecio() {
+    public String getPrecio() {
         return precio;
     }
 
-    public void setPrecio(int precio) {
+    public void setPrecio(String precio) {
         this.precio = precio;
     }
     
